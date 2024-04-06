@@ -1,0 +1,35 @@
+body {
+    font-size: 14px !important;
+    background-color: #bebebe;
+}
+
+.nav-logo {
+    width: 170px;
+}
+
+.navsetction {
+    color: white !important;
+}
+
+.header-top {
+    background-color: #262626;
+    color: white;
+
+}
+
+.socialmedia-icon i {
+    font-size: 18px;
+    color: var(--color-secondary);
+    transition: all 0.5s;
+    opacity: 0.5;
+}
+
+.socialmedia-icon i:hover {
+    color: white;
+    opacity: 1;
+    transition: font-size 0.2s;
+}
+
+.socialmedia-icon {
+    cursor: pointer;
+}
