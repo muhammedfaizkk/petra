@@ -1,6 +1,9 @@
 body {
     font-size: 14px !important;
-    background-color: #bebebe;
+    font-weight: 400 !important;
+    background-color: #bebebe !important;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-logo {
@@ -32,4 +35,161 @@ body {
 
 .socialmedia-icon {
     cursor: pointer;
+}
+
+.carousel-indicators {
+    list-style-type: none;
+    gap: 15px !important;
+    bottom: 140px !important;
+}
+
+.carousel-indicators li {
+    width: 18px !important;
+    height: 18px !important;
+    border-radius: 50%;
+}
+
+.banner-btn button {
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #bebebe;
+    color: white;
+}
+
+.banner-btn button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+
+.banner-section {
+    position: relative;
+}
+
+.banner-content {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: white;
+    width: 40%;
+    text-align: center;
+}
+
+.banner-content h2 {
+    font-weight: 700;
+    font-size: 52px;
+}
+
+.banner-content p {
+    font-size: 16px;
+}
+
+.swiper-slide {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.swiper-slide img {
+    max-width: 50%;
+    /* Adjust the width as needed */
+    height: auto;
+}
+
+.swiper-slide p {
+
+    margin: 0 20px;
+    /* Adjust spacing */
+}
+
+.swiper {
+    width: 60% !important;
+    background-color: white;
+    position: absolute;
+    bottom: 100px;
+}
+
+.carouselImages {
+    padding: 50px;
+}
+
+.swiper-slide {
+    padding-right: 50px;
+}
+
+
+.swiper-pagination .swiper-pagination-bullet {
+    background-color: black;
+    /* Change the background color of the indicators */
+}
+
+@media only screen and (max-width:950px) {
+    .banner-content {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 50%;
+    }
+
+    .carousel-indicators {
+        bottom: 60px !important;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .banner-content {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 70%;
+       
+    }
+
+    .carousel-indicators {
+        bottom: 10px !important;
+        margin-bottom: 0px !important;
+    }
+}
+
+@media only screen and (max-width:585px) {
+    .banner-content {
+        position: absolute;
+        top: 10%;
+        left: 0px;
+        width: 100%;
+        padding:0px 10px;
+       
+    }
+
+    .carousel-indicators {
+        bottom: 10px !important;
+        margin-bottom: 0px !important;
+    }
+    .banner-content h2 {
+        font-size: 32px;
+    }
+    
+    .banner-content p {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:469px) {
+    .banner-content{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:390px) {
+    .header-section {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .socialmdia-icons {
+        justify-content: center !important;
+
+    }
 }

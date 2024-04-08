@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .swiper-slide img {
+            max-width: 50%; /* Adjust the width as needed */
+            height: auto;
+        }
+        .swiper-slide p {
+            flex: 1; /* Fill remaining space */
+            margin: 0 20px; /* Adjust spacing */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+               <img src="./assets/images/slider-1.webp" alt="">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fugiat perspiciatis maiores unde obcaecati excepturi, labore et dicta non. Deserunt modi corrupti id repudiandae voluptas dolorum maxime fuga dolores quae.</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="./assets/images/slider-2.webp" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fugiat perspiciatis maiores unde obcaecati excepturi, labore et dicta non. Deserunt modi corrupti id repudiandae voluptas dolorum maxime fuga dolores quae.</p>
+             </div>
+             <div class="swiper-slide">
+                <img src="./assets/images/slider-3.webp" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fugiat perspiciatis maiores unde obcaecati excepturi, labore et dicta non. Deserunt modi corrupti id repudiandae voluptas dolorum maxime fuga dolores quae.</p>
+             </div>
+             <div class="swiper-slide">
+                <img src="./assets/images/slider-3.webp" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fugiat perspiciatis maiores unde obcaecati excepturi, labore et dicta non. Deserunt modi corrupti id repudiandae voluptas dolorum maxime fuga dolores quae.</p>
+             </div>
+            <!-- Add more slides as needed -->
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
+</body>
+
+</html>
