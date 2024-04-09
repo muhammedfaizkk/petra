@@ -315,10 +315,10 @@ body {
 }
 
 @media (max-width: 480px) {
-    .features-main {
+    /* .features-main {
         grid-template-columns: 1fr;
         /* Single column for even smaller screens */
-    }
+    /* }  */
     .product-end{
         padding:15px 30px;
     }
@@ -349,5 +349,15 @@ body {
     .socialmdia-icons {
         justify-content: center !important;
 
+    }
+    .features-img{
+        height: 60px;
+        width: 60px;
+    }
+    .features-main-child{
+        padding: 10px;
+    }
+    .features-main{
+        gap:10px;
     }
 }
