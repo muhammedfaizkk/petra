@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
 body {
     font-size: 14px !important;
     font-weight: 400 !important;
@@ -5,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 
 .nav-logo {
     width: 170px;
@@ -223,11 +230,7 @@ body {
     font-size: 30px;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-* {
-    font-family: "Poppins", sans-serif;
-}
 
 .container-testi {
     background-color: white;
@@ -332,12 +335,33 @@ body {
     padding-right: 0px !important;
 }
 
- .footer-menu {
+.footer-menu {
     cursor: pointer;
-    text-wrap: nowrap;
-} 
-.main-cnt{
-    margin-top:-27px !important;
+    margin-bottom: 5px;
+    position: relative;
+    /* Center text */
+}
+
+.footer-menu:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 80%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    background-color: rgb(243, 229, 229);
+}
+
+.footer-menu:hover::after {
+    background-color: rgb(243, 229, 229);
+}
+
+
+
+.main-cnt {
+    margin-top: -27px !important;
 }
 
 
@@ -367,13 +391,15 @@ body {
     display: block;
     width: 80%;
     border-top: 1px solid rgb(243, 232, 232);
-    margin: 0 auto; /* Center the border horizontally */
-    margin-bottom:10px;
+    margin: 0 auto;
+    /* Center the border horizontally */
+    margin-bottom: 10px;
 }
-.footer{
+
+.footer {
     display: flex;
     justify-content: space-between;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 768px) {
@@ -557,7 +583,7 @@ body {
     }
 
     .features-main-child {
-        padding: 10px;
+        padding: 4px;
     }
 
     .features-main {
